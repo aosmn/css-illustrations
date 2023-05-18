@@ -1,0 +1,24 @@
+html { 
+  background: yellow;
+}
+body {
+  height: 100%;
+  width: 100%;
+  position: relative;
+}
+.cone {
+  position: absolute;
+  /* background-color: #cfaa77; */
+  height: 100px;
+  width: 300px;
+  border-left: 100px solid transparent;
+  border-right: 100px solid transparent;
+  background-image: linear-gradient(45deg, #000 25%, transparent 25%, transparent 50%, #000 50%, #000 75%, transparent 75%, #fff);
+
+  border-top: 300px solid #cfaa77;
+}
+.arrow-down {
+  width: 0; 
+  height: 0; 
+
+}
