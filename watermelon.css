@@ -1,5 +1,5 @@
 html {
-  background: #aaccff;
+  background: #aaf5ff;
   height: 100vh;
   width: 100vw;
 }
@@ -69,7 +69,7 @@ body {
 
 .mask {
   position: absolute;
-  background-color: #aaccff;
+  background-color: #aaf5ff;
   top: -40px;
   left: -50px;
   /* background-color: #ffffff; */
@@ -168,7 +168,7 @@ body {
   position: absolute;
   width: 70px;
   height: 60px;
-  background-color: #aaccff;
+  background-color: #aaf5ff;
   border-radius: 100%;
   z-index: 1000;
   opacity: 0;
@@ -213,7 +213,7 @@ body {
   position: absolute;
   width: 30px;
   height: 30px;
-  background-color: #aaccff;
+  background-color: #aaf5ff;
   border-radius: 100%;
 }
 .tooth:first-child {
@@ -240,18 +240,33 @@ body {
 
 
 .container {
-  width: 500px;
-  height: 500px;
+  position: absolute;
+  width: 200px;
+  height: 200px;
   animation: rotate 2s infinite ease-in-out;
 }
-
+.container:first-child {
+  top: 0;
+  left: 0;
+}
+.container:nth-child(2) {
+  position: absolute;
+  top: 0px;
+  left: 200px;
+  width: 200px;
+  height: 200px;
+  animation: rotate 2s infinite ease-in-out;
+}
+/* * {
+  border: red solid 1px;
+} */
 .watermelon-container {
-  transform: scale(1.2);
+  transform: scale(.5);
   background-color: red;
   height: 100px;
   width: 10px;
   position: absolute;
-  left: 50px;
+  left: 10px;
   top: 10px;
 }
 

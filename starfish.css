@@ -1,0 +1,141 @@
+.fin-container {
+  position: absolute;
+}
+
+.fin {
+  width: 100px;
+  height: 150px;
+  background-color: salmon;
+  position: absolute;
+  border-radius: 95% 5% 100% 0% / 16% 3% 97% 84%;
+  transform: rotate(0deg) scaleY(-1);
+  z-index: 1000;
+}
+.fin-extension {
+  height: 150px;
+  width: 60px;
+
+  background-color: salmon;
+  position: absolute;
+  border-radius: 21% 79% 100% 0% / 70% 76% 24% 30%;
+  top: -40px;
+  left: 0px;
+  transform: rotate(-10deg);
+}
+
+.fin-extension:nth-child(2) {
+  height: 150px;
+  width: 60px;
+
+  background-color: salmon;
+  position: absolute;
+  border-radius: 18% 82% 100% 0% / 70% 99% 1% 30%;
+  top: -30px;
+  left: 20px;
+  transform: rotate(-14deg);
+}
+
+.fin-dot {
+  width: 8px;
+  height: 8px;
+  background-color: red;
+  opacity: 0.3;
+  border-radius: 10px;
+  z-index: 1000;
+  position: absolute;
+}
+.dots {
+  position: absolute;
+}
+.dots * {
+  animation: vibrate .2s infinite;
+}
+.fin-dot:nth-child(1) {
+  top: -30px;
+  left: 0px;
+  animation-delay: .6s;
+}
+.fin-dot:nth-child(2) {
+  top: -20px;
+  left: 10px;
+  animation-delay: 0s;
+
+}
+
+.fin-dot:nth-child(3) {
+  top: -5px;
+  left: 15px;
+  animation-delay: 1s;
+
+}
+
+.fin-dot:nth-child(4) {
+  top: 10px;
+  left: 25px;
+  animation-delay: .1s;
+}
+
+.fin-dot:nth-child(5) {
+  top: 25px;
+  left: 30px;
+  animation-delay: .4s;
+
+}
+.fin-dot:nth-child(6) {
+  top: 50px;
+  left: 40px;
+  animation-delay: .3s;
+}
+.fin-dot:nth-child(7) {
+  top: 70px;
+  left: 50px;
+  animation-delay: .23s;
+}
+
+
+.fin-dot:nth-child(8) {
+  top: 90px;
+  left: 60px;
+  animation-delay: .31s;
+}
+.fin-dot:nth-child(9) {
+  top: 110px;
+  left: 70px;
+  animation-delay: .67s;
+
+}
+
+.fin-container:nth-child(2) {
+  transform: rotate(60deg);
+  left: 170px;
+  top: 40px;
+}
+
+.fin-container:nth-child(3) {
+  transform: rotate(150deg);
+  left: 180px;
+  top: 230px;
+}
+.fin-container:nth-child(4) {
+  transform: rotate(220deg);
+  left: 10px;
+  top: 270px;
+}
+.fin-container:nth-child(5) {
+  transform: rotate(100deg) scaleY(-1);
+  left: -90px;
+  top: 70px;
+}
+
+@keyframes vibrate {
+  0% {
+    opacity: .5
+  }
+  50% {
+    opacity: .1
+
+  }
+  100% {
+    opacity: .3
+  }
+}
